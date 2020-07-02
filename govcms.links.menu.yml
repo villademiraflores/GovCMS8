@@ -1,5 +1,5 @@
 govcms.front_page:
-  title:           'Home'
+  title:           'Inicio'
   route_name:      '<front>'
   menu_name:       main
   weight:          -99

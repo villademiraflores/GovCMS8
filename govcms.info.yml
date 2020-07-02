@@ -1,16 +1,18 @@
-name:                   GovCMS
+name:                   GovCMSes
 type:                   profile
-description:            'A GovCMS Drupal Distribution for government and the public sector in Australia.'
+description:            'Distribución GovCMS para el sector público adaptada a España.'
 core:                   8.x
 
 distribution:
-  name:                 GovCMS
-  langcode:             en
+  name:                 GovCMSes
+  langcode:             es
   install:
+    # Revisar: adaptar el tema o clonar
     theme:              govcmsinstall
 
 dependencies:
   # Drupal Core modules
+  # Revisar: Comprobar dependencias para traducir interfaz
   - block_content
   - block_place
   - breakpoint
@@ -93,6 +95,7 @@ dependencies:
   - govcms_security
 
 dependencies_optional:
+  # Revisar: clonar a govcms8_default_content_es
   - govcms8_default_content
 
 themes:

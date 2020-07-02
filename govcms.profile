@@ -41,7 +41,10 @@ function govcms_form_user_login_form_alter(&$form, &$form_state) {
 function govcms_page_attachments_alter(array &$page) {
   foreach ($page['#attached']['html_head'] as $key => $value) {
     if ($value[1] == 'system_meta_generator') {
-      $page['#attached']['html_head'][$key][0]['#attributes']['content'] = 'Drupal 8 (http://drupal.org) + GovCMS (http://govcms.gov.au)';
+      /*
+      * Revisar: meta Drupal 8 + GovCMS
+      */
+      $page['#attached']['html_head'][$key][0]['#attributes']['content'] = 'Drupal 8 (https://drupal.org) + GovCMSes (http://govcms.gov.au)';
     }
   }
 }
